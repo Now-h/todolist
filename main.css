@@ -1,0 +1,125 @@
+/* 체크된 할 일의 텍스트에 줄 긋기 스타일 */
+.toDo_list_item.checked .text {
+  text-decoration: line-through;
+}
+
+/* 전체 요소에 공통적으로 적용되는 초기 스타일 설정 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 입력 요소에 대한 공통 스타일 설정 */
+input {
+  border: 1px solid gray;
+}
+
+/* 버튼 및 체크박스에 대한 공통적인 스타일 설정 */
+input[type='submit'],
+input[type='button'],
+input[type='checkbox'] {
+  cursor: pointer;
+}
+
+/* 전체 화면에 대한 초기 스타일 설정 */
+html, body {
+  width: 100%;
+}
+
+/* body의 배경 이미지 및 스타일 설정 */
+body {
+  background-image: url('background.jpg');;
+  background-size: cover; /* 이미지를 화면에 꽉 채우도록 조절 */
+  background-repeat: no-repeat; /* 이미지 반복 없음 */
+  overflow: scroll;
+}
+
+/* 콘텐츠 영역 스타일 설정 */
+.content {
+  display: flex;
+  width: 600px;
+  max-height: 100%;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  margin: 50px 400px;
+  border-radius: 25px;
+}
+
+/* 콘텐츠의 제목 영역 스타일 설정 */
+.content_head {
+  margin-top: 30px;
+}
+
+/* 콘텐츠 내부 영역 스타일 설정 */
+.content_inner {
+  width: 400px;
+  margin-top: 30px;
+}
+
+/* 할 일 입력 폼 스타일 설정 */
+.content_menu form {
+  display: flex;
+}
+
+.toDo_input {
+  font-size: 15px;
+  padding: 5px;
+  width: 250px;
+  border-radius: 5px;
+}
+
+/* 버튼 스타일 설정 */
+.btn {
+  width: 60px;
+  margin: 0px 2px;
+  margin-left: 3px;
+  border-radius: 7px;
+}
+
+/* 할 일 추가 버튼 스타일 설정 */
+.toDo_add {
+  margin-left: auto;
+}
+
+/* 할 일 목록 스타일 설정 */
+.toDo_list {
+  margin: 25px 0px;
+}
+
+/* 각 할 일 항목 스타일 설정 */
+.toDo_list_item {
+  display: flex;
+  margin-top: 5px;
+  align-items: baseline;
+}
+
+.toDo_list_item:first-child {
+  margin-top: 0;
+}
+
+/* 체크박스 스타일 설정 */
+input[type='checkbox'] {
+  margin-right: 5px;
+}
+
+/* 할 일 텍스트 스타일 설정 */
+.text {
+  max-width: 280px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 날짜 표시 스타일 설정 */
+.date {
+  margin-left: auto;
+}
+
+/* 삭제 버튼 스타일 설정 (비활성화 상태) */
+/*.delete {
+  background: transparent;
+  border: 0;
+  margin-left: 3px;
+}*/
+
