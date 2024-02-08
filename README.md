@@ -1,4 +1,4 @@
- - [x] https://now-h.github.io/todolist/
+ - [ ] https://now-h.github.io/todolist/
 
 ![image](https://github.com/Now-h/todolist/assets/150241213/70e4f705-74ba-4055-be61-b79d39f9afe9)
 
